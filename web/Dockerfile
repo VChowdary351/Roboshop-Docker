@@ -1,4 +1,4 @@
-FROM nginx:latest
+FROM nginx:latest-alpine
 RUN rm -rf /usr/share/nginx/html/index.html
 ADD static /usr/share/nginx/html/
 COPY roboshop.conf /etc/nginx/default.d/roboshop.conf
