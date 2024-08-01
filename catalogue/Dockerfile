@@ -1,4 +1,4 @@
-FROM node:16-alpine
+FROM node:19.5.0-alpine
 EXPOSE 8080
 RUN addgroup -S roboshop && adduser -S roboshop -G roboshop 
 WORKDIR /opt/server
