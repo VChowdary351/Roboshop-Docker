@@ -6,5 +6,6 @@ ENV MONGO=true
 USER roboshop
 COPY package.json .
 COPY server.js .
+RUN npm install -g npm@10.8.2
 RUN npm install --silent
 CMD [ "node", "server.js" ]
