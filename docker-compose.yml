@@ -32,7 +32,7 @@ services:
     image: web:v1
     container_name: web
     ports:
-      - 80
+      - 80:80
     networks:
       - roboshop
     depends_on:
