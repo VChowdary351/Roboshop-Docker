@@ -6,5 +6,5 @@ ENV MONGO=true
 USER roboshop
 COPY package.json .
 COPY server.js .
-RUN npm install
+RUN npm install --silent
 CMD [ "node", "server.js" ]
